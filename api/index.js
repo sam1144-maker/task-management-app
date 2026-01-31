@@ -15,7 +15,7 @@ app.use(cors({
     origin: [
         'http://localhost:5173',
         'http://localhost:5174',
-        'https://task-management-app-lovat.vercel.app/'
+        'https://task-management-app-lovat.vercel.app'
     ]
 }))
 
