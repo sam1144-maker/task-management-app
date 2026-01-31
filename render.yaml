@@ -20,7 +20,6 @@ services:
   - type: web
     name: task-management-frontend
     runtime: static
-    region: oregon
     plan: free
     rootDir: client
     buildCommand: npm install && npm run build
