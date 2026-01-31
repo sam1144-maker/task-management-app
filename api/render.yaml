@@ -1,0 +1,18 @@
+services:
+  # Backend Service
+  - type: web
+    name: task-management-backend
+    runtime: node
+    region: oregon
+    rootDir: api
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: MONGODB_URI
+        sync: false
+      - key: PORT
+        value: 5000
+      - key: NODE_ENV
+        value: production
+
+
